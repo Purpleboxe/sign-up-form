@@ -131,11 +131,11 @@ input:focus {
     border-radius: 10px;
     border: none;
     transition: 0.1s;
-    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #a2b689;
+    cursor: pointer;
 }
 
 .login {
