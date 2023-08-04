@@ -1,0 +1,193 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Cabin-Variable, sans-serif;
+}
+
+@font-face {
+    font-family: Cabin-Variable;
+    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: row wrap;
+}
+
+/* Left Side */
+
+.left {
+    background-image: url(Images/david-cadenas-VFTq3si9YVw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 0px;
+    top: 20vh;
+    gap: 1vw;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.592);
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.credit {
+    text-align: center;
+    position: relative;
+    top: 60vh;
+}
+
+.credit a {
+    color: white;
+}
+
+/* Right Side */
+
+.right {
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+}
+
+.text {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em 2em;
+}
+
+/* Form */
+
+.form-right {
+    padding: 20px 4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 5px rgb(223, 223, 223);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.form-right p {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(65, 65, 65); 
+    width: 100%;
+}
+
+
+.input {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 0.2rem 0px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 15vw;
+    font-size: 1.1em;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(219, 219, 219);
+    outline: none;
+}
+
+input:focus {
+    border: solid;
+    border-width: 1px;
+    border-color: blue;
+    box-shadow: 5px 5px 5px rgb(223, 223, 223);
+}
+
+.btn {
+    margin: 20px 4rem;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #7d8d69;
+    box-shadow: 5px 5px 5px rgb(223, 223, 223);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: #a2b689;
+}
+
+.login {
+    margin-left: 4rem;
+    font-size: 1.2em;
+}
+
+.login a {
+    text-decoration: none;
+    color: #7d8d69;
+}
+
+/* Window Resizing */
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .right {
+        width: auto;
+        height: auto;
+    }
+
+    .left {
+        width: 100vw;
+    }
+
+    .logo {
+        width: 100vw;
+        height: 20vh;
+        position: static;
+        gap: 10px;
+        font-size: 1em;
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+    .credit {
+        top: 0;
+    }
+
+    .login {
+        margin: 0;
+    }
+
+    .input {
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+    }
+}
